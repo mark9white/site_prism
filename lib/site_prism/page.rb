@@ -53,6 +53,10 @@ module SitePrism
       first *find_args
     end
 
+    def find_element *find_args
+      find *find_args
+    end
+
     def find_all *find_args
       all *find_args
     end

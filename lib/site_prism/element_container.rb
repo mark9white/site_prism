@@ -3,7 +3,7 @@ module SitePrism::ElementContainer
   def element element_name, *find_args
     build element_name, *find_args do
       define_method element_name.to_s do
-        find_first *find_args
+        find_element *find_args
       end
     end
   end
